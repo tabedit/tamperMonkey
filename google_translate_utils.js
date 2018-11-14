@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         google translate utils
-// @name:zh-CN   google翻译使用工具
+// @name:zh-CN   google翻译实用工具
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  auto remove line break for google translate(replaced with space)
