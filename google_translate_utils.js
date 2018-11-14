@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         google translate utils
 // @name:zh-CN   google翻译实用工具
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/tabedit/tamperMonkey
 // @version      0.2
 // @description  auto remove line break for google translate(replaced with space)
 // @description:zh-CN 自动移除google翻译原文中的换行符（替换为空格）
-// @author       wjwxxn
+// @author       tabedit
 // @include     http*://translate.google.*
 // @grant        none
 // ==/UserScript==
@@ -26,5 +26,8 @@
         }
     }
 
-    setInterval(checkloop, 100);
+    var answer=confirm("是否启用原文自动替换换行符");
+    if (answer){
+        setInterval(checkloop, 100);
+    }
 })();
